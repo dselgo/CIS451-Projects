@@ -1,5 +1,7 @@
 cd C:\Users\Katie\Documents\GitHub\Project1\CIS451-Project1
 
+jlsCircuitTester Signed_CLA_AdderSubtractor_16bit.jls testAddSubtract_16bit
+
 CLA Adder
 jlsCircuitTester Signed_CLA_AdderSubtractor_16bit.jls testAddSubtract_16bit
 All tests passed - time:245

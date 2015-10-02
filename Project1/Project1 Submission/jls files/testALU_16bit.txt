@@ -33,13 +33,13 @@ BEGIN subtract
 
 BEGIN mult_overflow2
  INPUTS 
-    InputA SIGNED(16) 1237 
-    InputB SIGNED(16) [1251, -1257]
+    InputA SIGNED(16) [1237, 2, 21000] 
+    InputB SIGNED(16) [1251, -1257, 2, 21000]
     Op 1
   OUTPUTS
-    Output [0x9cdf, 0x4623]
-    High [0x0017, 0xffe8] 
-    Overflow [1, 1]
+    Output SIGNED(16)[0x9cdf, 0x4623, 2474, 0x60A8,   2502,63022,4,0xA410,   0xDD18, 0xC948,0xA410,0x2040]
+    High [0x0017, 0xffe8, 0,  0x18C,   0,0,0,0,   0x0190, 0xFE6D,0,0x1A49] 
+    Overflow [1, 1,0,1,   0,0,0,1,   1,1,1,1]
 
 #
 # WARNING:  Be sure to test pairs of values that 
@@ -51,19 +51,19 @@ BEGIN mult_overflow2
 
 BEGIN less_than_signed
   INPUTS
-    InputA SIGNED(16) [1, -1,-32767]
-    InputB SIGNED(16) [0, 4, -6,2]
+    InputA SIGNED(16) [1, -1]
+    InputB SIGNED(16) [0, 4, -6,]
     Op 6
   OUTPUTS
-    Output [0,1,0,1,   1,1,0,1,   1,1,1,1]
-    Overflow 0
+    Output [0, 1, 0, 1,1,0]
+    Overflow [0,0,0,0,0,0]
 
 BEGIN less_than_unsigned
   INPUTS
-    InputA SIGNED(16) [1, -1,-32767]
-    InputB SIGNED(16) [0, 4, -6,2]
+    InputA SIGNED(16) [1, -1]
+    InputB SIGNED(16) [0, 4, -6]
     Op 7
   OUTPUTS
-    Output [0, 1, 1, 1,   0,0,0,0,    0,0,1,0 ]
-    Overflow 0
+    Output [0, 1, 1, 0,0,0 ]
+    Overflow [0,0,0,0,0,0]
 
