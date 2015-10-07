@@ -1,2 +1,2 @@
 @echo off
-java -Xmx256m -jar JLS.jar
+java -Xmx512m -jar JLS.jar
