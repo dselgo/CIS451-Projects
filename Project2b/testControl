@@ -464,7 +464,7 @@ BEGIN j
     FuncCode 0
   OUTPUTS
     ALUop EXCLUDE
-    RegDest 0
+    RegDest EXCLUDE
   	RegWrite 0
   	MemRead EXCLUDE
   	MemWrite 0
