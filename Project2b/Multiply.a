@@ -14,17 +14,18 @@
 
 # if the first multiplier is 0, then there is nothing to do
 	beq  $16, $0, END	# i3
-
 # add the second multipler to the product, then decrement the first
 # multiplier by 1, until it reaches 0.
 TOP:	add  $18, $18, $17      # i4  $18 += $17
 	addi $16, $16, -1       # i5  $16--
 	# Once the first multipler reaches 0, we're done.
 	beq  $16, $0, END       # i6
+	addi $16, $16, 10
 	j    TOP      		# i7
 
 # We're done.  The extra lines are just to make sure the final jump
 # goes to the right place.
 END:   addi $19, $19, 70	# i8
        addi $20, $20, 80	# i9
-       addi $21, $21, 90	# i10  
+       addi $21, $21, 90	# i10  */
+

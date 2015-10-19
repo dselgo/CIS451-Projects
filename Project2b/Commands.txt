@@ -2,23 +2,21 @@ jlsCPUTester PHSingleCycleCPU.jls basicLoadStoreTest.a
 
 jlsCPUTester PHSingleCycleCPU.jls basicOpsDemoTest.a
 
-jlsCPUTester PHSingleCycleCPU.jls Multiply.a
-
-jlsCPUTester PHSingleCycleCPU.jls TestAdd.a
+jlsCPUTester PHSingleCycleCPU.jls Multiply.a   X
 
 jlsCPUTester PHSingleCycleCPU.jls TestBasicLoadStore.a
 
 jlsCPUTester PHSingleCycleCPU.jls TestComplete.a
 
-jlsCPUTester PHSingleCycleCPU.jls TestJalJr.a
+jlsCPUTester PHSingleCycleCPU.jls TestJalJr.a   X
 
-jlsCPUTester PHSingleCycleCPU.jls TestMultiply.a
+jlsCPUTester PHSingleCycleCPU.jls TestMultiply.a  X
 
-jlsCPUTester PHSingleCycleCPU.jls TestSignExtend.a
+jlsCPUTester PHSingleCycleCPU.jls TestSignExtend.a X
 
-jlsCPUTester PHSingleCycleCPU.jls TestSlt.a
+jlsCPUTester PHSingleCycleCPU.jls TestSlt.a X
 
-jlsCPUTester PHSingleCycleCPU.jls TestSltiu.a
+jlsCPUTester PHSingleCycleCPU.jls TestSltiu.a 
 
 jlsCPUTester PHSingleCycleCPU.jls TestSltu.a
 
